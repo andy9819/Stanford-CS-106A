@@ -28,6 +28,9 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 			move();
 		}
+		if (noBeepersPresent()) {
+			putBeeper();
+			}//added to prevent off by one
 	}
 	private void BeeperDown() {
 		turnRight();
